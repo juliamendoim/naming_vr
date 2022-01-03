@@ -1,0 +1,69 @@
+Looking for a way to start understanding what is already there in VR with NLP, I've made some reviews of findings.
+
+1-VR and NLP for training simulations
+
+Surprisingly for me, this subjects has papers form 1998.
+
+Added to the benefits of VR for training purposes, the paper NATURAL LANGUAGE PROCESSING IN VIRTUAL REALITY TRAINING ENVIRONMENTS brings forward the importance
+of NLP when the training is hands-busy and eyes-busy.
+The architecture consisted in speech recognition and synthesis and a language parser based on a semantic grammar with domain especific production rules
+http://people.uncw.edu/guinnc/papers/ittsec_nlp.97.pdf
+
+There are more recent works on the same field of VR with training purposes. Papers like "An evaluation of virtual human technology in informational Kiosk" from 2004 or 
+"A mixed-initiative intelligent tutoring agent for interaction training" from 2008 among others, all including an interaction with a virtual agent or some kind of environment simulation 
+using natural language. 
+In the paper from 2008, the writers describe an ALE, advanced learning environment, where VR and NLP, among other technologies, help recreate equipment that is too costly, tasks that are too dangerous or concepts too abstract or intangible. In these ALE, the tutor can be replaced by a Virtual Asistant
+https://www.researchgate.net/publication/228596185_A_Mixed-Initiative_Intelligent_Tutoring_Agent_for_Interaction_Training
+
+And other with virtual humans in kiosks https://www.researchgate.net/publication/221052743_An_evaluation_of_virtual_human_technology_in_informational_kiosks
+
+Speech as input
+
+Apparently, one of the biggest fields were the interaction of NLP and 3D modelling, not restricted to VR, is in the actual modelling.
+Being 3D modelling a time consuming task, some efforts had been made in order of being able to describe in natural language a shape with maybe colours 
+and making it actually appear in the 3D modelling space.
+
+Kind like playing god creating things just by naming them.
+
+This made me remember my first contact with 3D modelling and NLP. I conected a speech recognizer to Blender an was able to say "a red baloon" 
+(couldn't pronounce sphere in a proper way apparently) and a red sphere would appear en the space.
+
+Incredibly similar to this question in stackexchange https://datascience.stackexchange.com/questions/98164/automating-3d-modeling-using-nlp
+
+https://towardsdatascience.com/speech-as-input-in-virtual-reality-bb892f9bb41
+
+“command and control” type interfaces - 2018
+
+Text-to-scene
+
+a paper from 2017, SceneSeer: 3D Scene Design with Natural Language, presents a really interesting challenge: 
+https://arxiv.org/pdf/1703.00050.pdf
+
+"Designing 3D scenes is currently a creative task that requires
+significant expertise and effort in using complex 3D design
+interfaces. This effortful design process starts in stark contrast to the easiness with which people can use language to
+describe real and imaginary environments"
+
+and introduce a tool to create and manipulate objects in 3D scenaries using voice and a 3D database. They call it text-to-scene generation models at a high, semantic, level.
+
+"Most desks are upright
+and on the floor but few people would mention this explicitly.
+This implicit spatial knowledge is critical for scene generation but hard to extract. (...) The semantics of objects and
+their approximate arrangement are typically more important
+than the precise and abstract properties of geometry."
+
+They use a semantic parser to parse a natural language sequence to a scene template in a very similar way as we've seen for training purposes: Select({lamp},{right(lamp,table)}) and its not only focused on generation of scenes but also in the manipulation of generated scenes.
+
+This paper quotes a variaty of previous articles from Stanford NLP authors and there's algo an implementation of text-to-scene in Stanford NLP group.
+
+One of the quoted authors is Angel Xuan Chang who in 2015 published a dissertetion in Stanford to get the degree of "Doctor in Philosophy" called TEXT TO 3D SCENE GENERATION
+The same Chang has an online demo in the NLP group webpage of Stanford for Text to Scene Generation with participation of non other than C. Manning. but i wasn't able to access the demo.
+
+On the project presentation, https://nlp.stanford.edu/projects/text2scene.shtml, other project is quoted as related and also in the above paper, and it is WordsEye.
+
+WordsEye, http://www.cs.columbia.edu/~coyne/papers/wordseye_siggraph.pdf, paper apparently from 2001, the idea is similar to the previous examples, use natuaral language, the most "natural and easy" way of describing visual ideas and mental images, to generate scenes in 3D space. Based in also a similar process of having a 3D objects database annotated with useful tags (useful for the mapping with language, that is)
+
+There's also in 2013 AttribIT, https://gfx.cs.princeton.edu/pubs/Chaudhuri_2013_ACC/AttribIt.pdf, an approach for people to create visual
+content using relative semantic attributes expressed in linguistic terms
+
+In 2019 we have Jose Saldaa paper speaks of a different factor, the immersivness in VR enhanced by the use of voice commands.

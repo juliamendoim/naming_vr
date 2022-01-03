@@ -1,0 +1,13 @@
+8 Nov
+NVIDIA Emerging Chapters Community Developer Meetup [SE31126]
+
+The NVIDIA Emerging Chapters program is hosting a virtual developer meetup at GTC for developer communities and their members. During this virtual session, we’ll have lightning talks where you’ll learn about the various AI, data science, and content tech tools and SDKs, as well as open-source projects. You'll also interact with NVIDIA experts and try your luck with raffles for $100-500 USD in AI course coupons from the NVIDIA Deep Learning Institute.
+
+NVIDIA OMNIVERSE - Universal data format associated with Pixar: USD
+
+NVIDIA TAO = train, adapt, optimize toolkit, you can start from Nvidia pre trained models - use of jupyter notebooks - reduce computation (Model Pruning)
+
+NVIDIA Graph Composer NGC- como blueprint para armar AI vision apps sin mirar codigo ni librerias - Deepstream: podes usar un modelo de TF
+
+Conversational AI - SDKs NEMO (Training conversatinoal models) and RIVA (inference and deployment): encontraron que aprender un idioma con pocos datos es mejor si se usa ocmo base un pretrained en ingles
+

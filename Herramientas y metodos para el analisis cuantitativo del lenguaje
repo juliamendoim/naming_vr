@@ -1,0 +1,65 @@
+Métodos distribucionales y visualización aplicados a la semántica léxica con Mariana Montes
+
+Introduccion
+
+Python, R, D3 (Nephovys) y Shiny(R)
+
+
+Modelos distribucionales
+
+Hipotesis distribucional, hipotesis sobre distribucion y significado (Firth)
+Te pueden dar informacion sobre el lenguaje en verdad? en mismo contexto encontras sinonimos pero tambien antonimos, hiperhonimos, etc.
+Computacionalmente los modelos distribucionales son vectores. PMI(linguistica, lenguaje) = log ((121/N)/lenguaje) (linguistica y lenguaje las palabras q se estan comparando por similaridad) Tienen o no los mismos amigos (Firth) 
+como saber si algo es buena o mala asociacion? PMI se considera el mejor porque si
+PPMI (positive PMI) el pmi negativo no aporta y no ayuda matematicamente - distancia pequena es mas parecido
+La polisemia se aplana en el vector - se modelan entonces distintas ocurrencias - se representan sumando los valores de las palabras que los circundan en cada ejemplo, es decir usas los contextos de los contextos, pero que palabra elegimos para cada instancia? como definis que es el contexto?
+
+Comparacion de modelos
+
+elegir preposiciones y pronombre o no como ventana - filtro gramatical
+ampliar - reducir la ventana
+usar relaciones sintacticas - relaciones sintacticas
+
+Semantica distribucionales
+
+Visual analytics for distributional semantic - Tesis de Mariana Montes
+(Semantica nefologica, por las nubes)
+
+Herramientas de visualizacion 
+
+T-sne (perplejidad 30) para representar la distancia visualmente - la distancia entre grupos no es "realista" pero si entre puntos de un grupo
+Al T-sne se lo puede ver con un heatmap tmb q aclara mejor la relacion entre grupos y palabras
+umapp seria mas realista
+
+Distancias entre modelos 
+
+Nivel 1
+Clustering: Partitioning Around Medoids - para seleccionar entre modelos dentro de clusters de modelos
+PAM - ver grupos de modelos de por si
+
+Nivel 2
+Comparar en que se parecen distintos modelos, si las agrupaciones se mantienen o no
+
+Level 3
+Ver los modelos individualmente 
+
+
+Agrupacion de ocurrencias
+
+HDBSCAN (usado antes de tsne y ver si estan de acuerdo)
+metodo de agrupacion jerarquica
+no asume que todos los elementos deben ser agrupados
+incluyen probabilidades de pertenencia
+busca areas densas rodeadas de areas menos densas
+
+corpus?
+valor de verdad humano?
+
+preguntas
+
+como operacionalizas lexemas - el corpus esta lematizado y analizado semanticamente - bottom up
+vectores no tienen en cuenta el orden de palabras en este caso - relevantes con medidas de asociacion - delta p es asimetrica q te da un valor distinto si una palabra es el nodo? y la otra el colocado
+
+500 millones de palabras entre nerdanles y flamengo
+
+como construir vectores mas interpretables con PMI que con embeddings, en PMI las dimensiones son mas interpretables porque cada dimension es una palabra del contexto, en el embedding, el vector no te puede dar informacion de cual de la spalabras de contexto fue importante para encontrar la info
